@@ -33,4 +33,7 @@ SampleApp::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  # 为测试环境重新设置BCrypt耗时因子
+  ActiveModel::SecurePassword.min_cost = true
 end
