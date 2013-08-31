@@ -7,6 +7,9 @@ gem 'rails', '4.0.0'
 group :development, :test do
   gem 'mysql2'
   gem 'rspec-rails', '2.14.0'
+  gem 'spork-rails', github: 'railstutorial/spork-rails'
+  gem 'guard-spork', '1.5.1'
+  gem 'childprocess', '0.3.9'
 end
 
 group :test do
@@ -16,6 +19,7 @@ end
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.0'
 
+gem 'bootstrap-sass', '2.3.2.2'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.1.1'
 
@@ -51,3 +55,4 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'pry',group: [:development, :test]
